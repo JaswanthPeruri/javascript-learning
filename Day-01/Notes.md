@@ -69,13 +69,91 @@ console.log(age);
 
 ## 4. Variable Declaration
 
-A variable is declared before using it.
+Before a variable can be used in a JavaScript program, it must first be **declared**. Declaring a variable tells the JavaScript engine to create a memory location where data can be stored.
 
-There are three ways to declare variables in JavaScript.
+After declaring a variable, you can assign a value to it immediately or later in the program.
 
-- var
-- let
-- const
+### Syntax
+
+```javascript
+keyword variableName;
+```
+
+or
+
+```javascript
+keyword variableName = value;
+```
+
+Where:
+- **keyword** → `var`, `let`, or `const`
+- **variableName** → Name of the variable.
+- **value** → The data stored in the variable (optional during declaration).
+
+### Example 1: Declaring a Variable
+
+```javascript
+let name;
+```
+
+In the above example:
+- `let` is the keyword used to declare the variable.
+- `name` is the variable name.
+- Since no value is assigned, its default value is `undefined`.
+
+### Example 2: Declaring and Initializing a Variable
+
+```javascript
+let age = 20;
+```
+
+Here:
+- The variable `age` is declared.
+- The value `20` is assigned during declaration.
+
+### Example 3: Declaring Multiple Variables
+
+```javascript
+let firstName = "Jaswanth";
+let lastName = "Peruri";
+let age = 20;
+```
+
+### Output
+
+```javascript
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+```
+
+**Output**
+
+```
+Jaswanth
+Peruri
+20
+```
+
+---
+
+## Ways to Declare Variables
+
+JavaScript provides **three keywords** to declare variables.
+
+- `var`
+- `let`
+- `const`
+
+Each keyword has different behavior regarding:
+- Scope
+- Reassignment
+- Redeclaration
+- Hoisting
+
+These differences are discussed in detail in the next section (**var, let and const**).
+
+> **Note:** In modern JavaScript (ES6 and later), it is recommended to use **`let`** for variables whose values may change and **`const`** for variables whose values should remain constant. The use of **`var`** is generally avoided in modern development due to its function scope and hoisting behavior.
 
 ---
 
